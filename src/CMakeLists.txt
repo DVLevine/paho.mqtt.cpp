@@ -23,6 +23,10 @@
 #     Frank Pagliughi - made the shared library optional
 #*******************************************************************************/
 
+# Dan addition to enable access to package installed libraries
+list(APPEND CMAKE_MODULE_PATH "/usr/lib/aarch64-linux-gnu/cmake/eclipse-paho-mqtt-c")
+
+
 find_package(PahoMqttC REQUIRED)
 
 # --- The headers ---
